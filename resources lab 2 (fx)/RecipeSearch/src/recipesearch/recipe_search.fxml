@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="544.0" maxWidth="834.0" minHeight="400.0" minWidth="600.0" prefHeight="544.0" prefWidth="834.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="recipesearch.RecipeSearchController">
+   <children>
+      <MenuBar fx:id="menuBar" maxHeight="30.0" maxWidth="600.0" minHeight="30.0" minWidth="600.0" prefHeight="30.0" prefWidth="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="%fileMenu.text">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#closeApplicationActionPerformed" text="%exitApplicationMenuItem.text" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="%helpMenu.text">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#openAboutActionPerformed" text="%aboutMenuItem.text" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <CheckBox layoutX="241.0" layoutY="96.0" mnemonicParsing="false" text="CheckBox" />
+      <CheckBox layoutX="241.0" layoutY="48.0" mnemonicParsing="false" text="CheckBox" />
+      <Slider layoutX="364.0" layoutY="75.0" max="999.0" min="1.0" prefHeight="16.0" prefWidth="119.0" />
+      <Slider blockIncrement="1.0" layoutX="515.0" layoutY="75.0" majorTickUnit="1.0" max="2.0" minorTickCount="1" prefHeight="16.0" prefWidth="119.0" showTickMarks="true" snapToTicks="true" />
+      <Slider layoutX="660.0" layoutY="75.0" max="150.0" min="10.0" />
+      <Label layoutX="400.0" layoutY="48.0" text="Kostnad" />
+      <Label layoutX="544.0" layoutY="48.0" text="Svårighet" />
+      <Label layoutX="719.0" layoutY="48.0" text="Maxtid" />
+      <MenuButton layoutX="57.0" layoutY="43.0" mnemonicParsing="false" text="MenuButton">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Action 1" />
+          <MenuItem mnemonicParsing="false" text="Action 2" />
+        </items>
+      </MenuButton>
+      <MenuButton layoutX="57.0" layoutY="91.0" mnemonicParsing="false" text="MenuButton">
+         <items>
+            <MenuItem mnemonicParsing="false" text="Action 1" />
+            <MenuItem mnemonicParsing="false" text="Action 2" />
+         </items>
+      </MenuButton>
+      <Label layoutX="407.0" layoutY="96.0" text="Label" />
+      <Label layoutX="557.0" layoutY="97.0" text="Label" />
+      <Label layoutX="719.0" layoutY="97.0" text="Label" />
+   </children>
+</AnchorPane>
